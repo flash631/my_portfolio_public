@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aswin M R</title>
+
+  <link rel="stylesheet" href="css/fontawesome/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="hero" id="heroContainer">
+
+  <div class="left-panel">
+    <div class="bubble-menu-vertical">
+      <ul>
+        <li><a href="about.html"><span class="menu-label">About</span></a></li>
+        <li><a href="experience.html"><span class="menu-label">Experience</span></a></li>
+        <li><a href="publications.html"><span class="menu-label">Publications</span></a></li>
+        <li><a href="skills.html"><span class="menu-label">Skills</span></a></li>
+        <li><a href="projects.html"><span class="menu-label">Projects</span></a></li>
+        <li><a href="certifications.html"><span class="menu-label">Certifications</span></a></li>
+        <li><a href="contact.html"><span class="menu-label">Contact</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="center-panel">
+    <div class="intro-text">
+      <h1 id="welcomeText">Hi!</h1>
+
+      <h2>I am</h2>
+      <h1>ASWIN M R<br></h1>
+      <h3>Master of Engineering in Aerospace Systems Engineering</h3>
+      <h4>At The</h4>
+      <h3>University of Illinois Urbana-Champaign<br><br></h3>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/aswin-m-r-9a07841b6/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/flash631" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://x.com/AswinMR15" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://orcid.org/0000-0001-6214-7129" target="_blank">
+          <i class="fa-brands fa-orcid"></i>
+        </a>
+        <a href="https://www.researchgate.net/profile/Aswin-M-R" target="_blank">
+          <i class="fa-brands fa-researchgate"></i>
+        </a>
+        <a href="https://www.instagram.com/ashwin.mkv/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/aswin.mr.52/" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://scholar.google.com/citations?user=rgYx6gwAAAAJ&hl=en" target="_blank">
+          <i class="fa-brands fa-google-scholar"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-panel">
+    <div class="pic-section" id="picSection">
+      <img 
+        id="myPic" 
+        src="images\20241130_203038.jpg"
+        alt="My Picture"
+      />
+      <p id="picDesc"><em>Pic taken at 875 N Michigan Ave 94th floor, Chicago, IL</em></p>
+    </div>
+  </div>
+</div>
+
+<div class="black-overlay" id="blackOverlay"></div>
+
+<script>
+  window.addEventListener("load", () => {
+    const blackOverlay = document.getElementById("blackOverlay");
+    const welcomeText  = document.getElementById("welcomeText");
+    const hero         = document.getElementById("heroContainer");
+    const picSection   = document.getElementById("picSection");
+
+    setTimeout(() => {
+      blackOverlay.classList.add("fade-out");
+    }, 1000);
+
+    setTimeout(() => {
+      welcomeText.classList.add("morph-welcome");
+    }, 1000);
+
+    setTimeout(() => {
+      blackOverlay.style.pointerEvents = "none";
+    }, 2500);
+
+    setTimeout(() => {
+      hero.classList.add("relocate");
+      picSection.classList.add("show-pic");
+    }, 2000);
+  });
+</script>
+
+</body>
+</html>

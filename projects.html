@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aswin M R - Projects</title>
+
+  <link rel="stylesheet" href="css/fontawesome/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: linear-gradient(to right, #740303, #796302);
+    color: #333;
+  }
+
+  .container {
+    display: flex;
+    height: 100vh;
+    background: inherit;
+  }
+
+  .left-panel {
+    flex: 0 0 200px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bubble-menu-vertical ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .bubble-menu-vertical li {
+    width: 140px;
+    height: 60px;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bubble-menu-vertical li:hover {
+    transform: scale(1.1);
+  }
+  .bubble-menu-vertical li a {
+    text-decoration: none;
+    color: #444;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-label {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem;
+  }
+
+  .right-panel {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+  }
+  .right-panel header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .right-panel header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  .right-panel header p {
+    font-size: 1.2rem;
+    color: #eee;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .project h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .pdf-viewer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    padding: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .left-panel {
+      flex: none;
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ccc;
+    }
+    .right-panel {
+      flex: none;
+      height: auto;
+    }
+    .pdf-viewer {
+      height: 50vh;
+    }
+  }
+</style>
+
+
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="bubble-menu-vertical">
+        <ul>
+          <li><a href="index.html"><span class="menu-label">Home</span></a></li>
+          <li><a href="about.html"><span class="menu-label">About</span></a></li>
+          <li><a href="experience.html"><span class="menu-label">Experience</span></a></li>
+          <li><a href="publications.html"><span class="menu-label">Publications</span></a></li>
+          <li><a href="skills.html"><span class="menu-label">Skills</span></a></li>
+          <li><a href="projects.html"><span class="menu-label">Projects</span></a></li>
+          <li><a href="certifications.html"><span class="menu-label">Certifications</span></a></li>
+          <li><a href="contact.html"><span class="menu-label">Contact</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <header>
+        <h1>Projects</h1>
+      </header>
+
+      <div class="projects-container">
+        <div class="project">
+          <h2>Experimental, Numerical and CFD testing of improvised Resistojet Thruster</h2>
+          <div class="pdf-viewer">
+            <iframe src="https://drive.google.com/file/d/11vk5BDrp3bqpBe1QyivYahm95EkygH4K/preview" width="1400" height="625" allow="autoplay"></iframe>
+          </div>
+        </div>
+
+        <div class="project">
+          <h2>Electric Pump Fed System Performance analysis on Rutherford Engine and Auxiliary modifications</h2>
+          <div class="pdf-viewer">
+            <iframe src="https://drive.google.com/file/d/19PXEZNEABhXhhPnixGO3aWws9H-VDqSY/preview" width="1400" height="625" allow="autoplay"></iframe>
+          </div>
+        </div>
+
+        <div class="project">
+          <h2>Voice Controlled Robot Using Arduino</h2>
+          <div class="pdf-viewer">
+            <iframe src="https://drive.google.com/file/d/1Dby4qKKiEeRMupiLowvaJshR0BdyD8dz/preview" width="1400" height="625" allow="autoplay"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
