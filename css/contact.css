@@ -2,13 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid #008b8b;
 }
 
 html, body {
   height: 100%;
-  background: linear-gradient(to right, #740303, #796302);
+  background: #111;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  color: #333;
+  color: #fff;
 }
 
 .container {
@@ -18,7 +19,7 @@ html, body {
 
 .left-panel {
   flex: 0 0 220px;
-  background: #f0f0f0;
+  background: #111;
   display: flex;
   align-items: center;
   justify-content: center;
